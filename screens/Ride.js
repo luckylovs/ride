@@ -87,10 +87,10 @@ export default class RideScreen extends Component {
              SHORT
           );*/}
 
-          { ToastAndroid.show(
+           ToastAndroid.show(
             'You have rented the bike for next 1 hour. Enjoy your ride!!',
             ToastAndroid.SHORT
-          );}
+          );
 
           this.setState({
             bikeAssigned: true,
@@ -306,6 +306,7 @@ const styles = StyleSheet.create({
     width: 100,
     height: 50,
     backgroundColor: '#FBE5C0',
+    
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
     justifyContent: 'center',
